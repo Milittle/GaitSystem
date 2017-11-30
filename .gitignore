@@ -32,3 +32,4 @@
 *.out
 *.app
 .vs
+GaitUI/DataBase/

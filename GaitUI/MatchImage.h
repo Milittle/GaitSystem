@@ -38,7 +38,7 @@ public:
 	std::vector<double> readFromDataBase(std::string path);
 	double calcDistance(std::vector<std::vector<double> > feature);
 	double calcCellDis(std::vector<double>, std::vector<double>);
-	void sendDis();
+	void sendDistance();
 
 
 public:

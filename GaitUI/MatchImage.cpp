@@ -254,7 +254,7 @@ void MatchImage::dealMatch(std::vector<arma::mat>& sequence, std::vector<std::ve
 		int alpha2 = 625;
 		int imax = 20; //循环次数
 
-					   //这里计算出来的梯度是有误差的
+		//这里计算出来的梯度是有误差的
 		arma::mat filter1;
 		filter1 << -1 << 1 << arma::endr
 			<< -1 << 1 << arma::endr;
@@ -470,7 +470,7 @@ void MatchImage::dealEuclideanD()
 		distance.push_back(calcDistance(info));
 		info.clear();
 	}
-	sendDis();
+	sendDistance();
 }
 
 
@@ -540,7 +540,7 @@ double MatchImage::calcCellDis(std::vector<double> fCell, std::vector<double> te
 }
 
 
-void MatchImage::sendDis()
+void MatchImage::sendDistance()
 {
 	int ID = 0;
 	double currrent = distance.at(0);

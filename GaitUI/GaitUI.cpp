@@ -148,6 +148,7 @@ bool GaitUI::setDataBaseID(std::string temp)
 	{
 		f << temp << std::endl;
 	}
+	dataBaseIDVec.push_back(temp);
 	return true;
 }
 
@@ -259,6 +260,7 @@ void GaitUI::setProgressBar(int n, int sum)
 		setControlStatus(true); //设置空间不可用
 	}
 }
+
 
 void GaitUI::setRecognitionID(QString RecognitionID)
 {
