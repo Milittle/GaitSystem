@@ -121,7 +121,19 @@ public:
 		{
 			sum += *it;
 		}
-		int mean = sum / tempX.size();
+		//·ÀÖ¹³ıÁãÒì³£
+		if (tempX.size() == 0)
+		{
+			return 0;
+		}
+		int mean = 0;
+		try {
+			mean = sum / tempX.size();
+		}
+		catch (...)
+		{
+
+		}
 		return mean;
 	}
 

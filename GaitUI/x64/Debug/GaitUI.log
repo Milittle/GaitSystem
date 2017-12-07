@@ -1,4 +1,11 @@
-﻿  GaitUI.cpp
+﻿  Moc'ing MatchImage.h...
+  GaitUI.cpp
+  moc_GaitUI.cpp
+  moc_MatchImage.cpp
+  moc_MyThread.cpp
   MatchImage.cpp
+  MyThread.cpp
+  main.cpp
   正在生成代码...
+  qrc_GaitUI.cpp
   GaitUI.vcxproj -> C:\Users\milittle\source\repos\GaitUI\x64\Debug\GaitUI.exe

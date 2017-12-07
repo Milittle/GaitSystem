@@ -1,24 +1,11 @@
-﻿  Moc'ing GaitUI.h...
-  Uic'ing GaitUI.ui...
-  Moc'ing MatchImage.h...
-  Moc'ing MyDialog.h...
-  Moc'ing MyThread.h...
-  Rcc'ing GaitUI.qrc...
-RCC : warning : No resources in 'C:\Users\milittle\source\repos\GaitUI\GaitUI\GaitUI.qrc'.
-  
-  Dealing.cpp
-  FileUpLoader.cpp
+﻿  Moc'ing MatchImage.h...
   GaitUI.cpp
   moc_GaitUI.cpp
   moc_MatchImage.cpp
-  moc_MyDialog.cpp
   moc_MyThread.cpp
-  main.cpp
   MatchImage.cpp
-  MyDialog.cpp
-  MyEvent.cpp
   MyThread.cpp
+  main.cpp
   正在生成代码...
-  qrc_GaitUI.cpp
     正在创建库 C:\Users\milittle\source\repos\GaitUI\x64\Release\GaitUI.lib 和对象 C:\Users\milittle\source\repos\GaitUI\x64\Release\GaitUI.exp
   GaitUI.vcxproj -> C:\Users\milittle\source\repos\GaitUI\x64\Release\GaitUI.exe
