@@ -338,7 +338,7 @@ void MatchImage::dealMatch(std::vector<arma::mat>& sequence, std::vector<std::ve
 		out.push_back(returnTemp);
 		returnTemp.clear();
 
-		emit setMessage(n, sequence.size() - 1);
+		emit setMessage(n, sequence.size() + 1);
 	}
 	dealEig(out);
 	dealEuclideanD();
@@ -420,6 +420,7 @@ void MatchImage::dealEig(std::vector<std::vector<arma::mat> > &inputs)
 			vsCtemp.push_back(-vsCvalue);
 		}
 		vsCol.push_back(vsCtemp);
+		emit setMessage(i, inputs.size() + 1);
 	}
 
 	usRowW = dealNor(usRow);
@@ -469,6 +470,7 @@ void MatchImage::dealEuclideanD()
 		DataSetUV.push_back(info);
 		distance.push_back(calcDistance(info));
 		info.clear();
+		emit setMessage(i, size_sum - 1);
 	}
 	sendDistance();
 }
@@ -552,5 +554,12 @@ void MatchImage::sendDistance()
 			ID = i;
 		}
 	}
-	emit setDataBaseID(QString::fromStdString(dataBaseIDVecC.at(ID)));
+	if (currrent > 1000000)
+	{
+		emit setDataBaseID(QString::fromStdString("No Target"));
+	}
+	else 
+	{
+		emit setDataBaseID(QString::fromStdString(dataBaseIDVecC.at(ID)));
+	}
 }
