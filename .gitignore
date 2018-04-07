@@ -33,3 +33,5 @@
 *.app
 .vs
 GaitUI/DataBase/
+x64/*
+

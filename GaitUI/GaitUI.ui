@@ -28,160 +28,109 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="loadModelBtn">
-    <property name="geometry">
-     <rect>
-      <x>546</x>
-      <y>12</y>
-      <width>113</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Load Model</string>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="addToDataBaseBtn">
-    <property name="geometry">
-     <rect>
-      <x>546</x>
-      <y>56</y>
-      <width>114</width>
-      <height>37</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Add To DataBase</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="recognitionBtn">
-    <property name="geometry">
-     <rect>
-      <x>546</x>
-      <y>103</y>
-      <width>114</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Recognition</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="deleteDataBaseBtn">
-    <property name="geometry">
-     <rect>
-      <x>547</x>
-      <y>151</y>
-      <width>113</width>
-      <height>37</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Delete DataBase</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="database_count_label">
-    <property name="geometry">
-     <rect>
-      <x>552</x>
-      <y>190</y>
-      <width>104</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::RightToLeft</enum>
-    </property>
-    <property name="text">
-     <string>DataBase Count</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="database_number_edit">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>213</y>
-      <width>108</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="lineWrapMode">
-     <enum>QTextEdit::WidgetWidth</enum>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="recognition_obj_label">
-    <property name="geometry">
-     <rect>
-      <x>552</x>
-      <y>244</y>
-      <width>104</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::RightToLeft</enum>
-    </property>
-    <property name="text">
-     <string>RecognitionOBJ</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="recognition_obj_edit">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>268</y>
-      <width>108</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="image_show_label">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>481</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>SequenceShowArea</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>280</y>
-      <width>431</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="value">
-     <number>0</number>
-    </property>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout" rowstretch="2,2,2,2,2,2,1,1" columnstretch="1,3">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="loadModelBtn">
+        <property name="text">
+         <string>Load Model</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="7">
+       <widget class="QLabel" name="image_show_label">
+        <property name="text">
+         <string>SequenceShowArea</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="database_count_label">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="text">
+         <string>DataBase Count</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="recognitionBtn">
+        <property name="text">
+         <string>Recognition</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QTextEdit" name="recognition_obj_edit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="addToDataBaseBtn">
+        <property name="text">
+         <string>Add To DataBase</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="deleteDataBaseBtn">
+        <property name="text">
+         <string>Delete DataBase</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="recognition_obj_label">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="text">
+         <string>RecognitionOBJ</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QTextEdit" name="database_number_edit">
+        <property name="lineWrapMode">
+         <enum>QTextEdit::WidgetWidth</enum>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QProgressBar" name="progressBar">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
