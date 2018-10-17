@@ -9,11 +9,11 @@ I use this method implment the Project based C++, Qt and some 3rdparty to recogn
 ## Table of Content
 
 * [Prerequisites](#Prerequisites)
-* [Getting the code](#Getting the code)
-* [Getting the Datasets](#Getting the Datasets)
-* [Running this Project with you](#Running this Project with you)
-* [Gif Demo](#Gif Demo)
-* [Concat/Getting Help](#Concat/Getting Help)
+* [Getting_the_code](#Getting the code)
+* [Getting_the_Datasets](#Getting the Datasets)
+* [Running_this_Project with you](#Running this Project with you)
+* [Gif_Demo](#Gif Demo)
+* [Concat/Getting_Help](#Concat/Getting Help)
 
 ## Prerequisites
 
