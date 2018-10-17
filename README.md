@@ -69,5 +69,5 @@ git clone git@github.com:Milittle/GaitSystem.git
 
 **Email:** mizeshuang@gmail.com
 
-**Author:**Milittle
+**Author:** Milittle
 
