@@ -8,12 +8,12 @@ I use this method implment the Project based C++, Qt and some 3rdparty to recogn
 
 ## Table of Content
 
-* [Prerequisites](#Prerequisites)
-* [Getting the code](#Getting-the-code)
-* [Getting the Datasets](#Getting-the-Datasets)
-* [Running this Project with you](#Running-this-Project-with-you)
-* [Gif Demo](#Gif-Demo)
-* [Concat/Getting Help](#Concat/Getting-Help)
+* [Prerequisites](#prerequisites)
+* [Getting the code](#getting-the-code)
+* [Getting the Datasets](#getting-the-datasets)
+* [Running this Project with you](#running-this-project-with-you)
+* [Gif Demo](#gif-demo)
+* [Concat/Getting Help](#concat/getting-help)
 
 ## Prerequisites
 
@@ -71,3 +71,6 @@ git clone git@github.com:Milittle/GaitSystem.git
 
 **Author:** Milittle
 
+最后：这是我写的比较水的一个步态识别的小Demo，以后再有机会做一些其他方面的工作。
+
+毕竟这是第一个步态识别小Demo，留作纪念而已。（好多东西都需要优化！！！）
