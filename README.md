@@ -13,7 +13,7 @@ I use this method implment the Project based C++, Qt and some 3rdparty to recogn
 * [Getting the Datasets](#getting-the-datasets)
 * [Running this Project with you](#running-this-project-with-you)
 * [Gif Demo](#gif-demo)
-* [Concat/Getting Help](#concat/getting-help)
+* [Concat Getting Help](#concat-getting-help)
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ git clone git@github.com:Milittle/GaitSystem.git
 
 ![DemoGif](https://s1.ax1x.com/2018/10/17/id7fds.gif)
 
-# Concat/Getting Help
+# Concat Getting Help
 
 **Email:** mizeshuang@gmail.com
 
