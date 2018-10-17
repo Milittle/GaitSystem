@@ -36,9 +36,10 @@
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>D:\programFile\armadillo-8.200.2\include;D:\programFile\opencv3.1\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\programFile\armadillo-8.200.2\examples\lib_win64;D:\programFile\opencv3.1\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)output\$(Configuration)\$(Platform)\bin\</OutDir>
+    <IncludePath>$(SolutionDir)3rdparty\armadillo-8.200.2\include;$(SolutionDir)3rdparty\opencv3.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)3rdparty\armadillo-8.200.2\lib_win64;$(SolutionDir)3rdparty\opencv3.1\lib;$(LibraryPath)</LibraryPath>
+    <IntDir>$(SolutionDir)output\$(Configuration)\$(Platform)\tmp\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

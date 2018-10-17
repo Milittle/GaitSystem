@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'GaitUI.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.2
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -35,15 +35,15 @@ public:
     QHBoxLayout *horizontalLayout;
     QGridLayout *gridLayout;
     QPushButton *loadModelBtn;
-    QLabel *image_show_label;
-    QLabel *database_count_label;
-    QProgressBar *progressBar;
-    QPushButton *recognitionBtn;
-    QTextEdit *recognition_obj_edit;
     QPushButton *addToDataBaseBtn;
+    QPushButton *recognitionBtn;
     QPushButton *deleteDataBaseBtn;
+    QLabel *database_count_label;
+    QLabel *image_show_label;
     QLabel *recognition_obj_label;
     QTextEdit *database_number_edit;
+    QProgressBar *progressBar;
+    QTextEdit *recognition_obj_edit;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -52,7 +52,7 @@ public:
     {
         if (GaitUIClass->objectName().isEmpty())
             GaitUIClass->setObjectName(QStringLiteral("GaitUIClass"));
-        GaitUIClass->resize(672, 372);
+        GaitUIClass->resize(758, 397);
         QFont font;
         font.setFamily(QStringLiteral("Consolas"));
         font.setPointSize(9);
@@ -76,11 +76,20 @@ public:
 
         gridLayout->addWidget(loadModelBtn, 0, 0, 1, 1);
 
-        image_show_label = new QLabel(centralWidget);
-        image_show_label->setObjectName(QStringLiteral("image_show_label"));
-        image_show_label->setAlignment(Qt::AlignCenter);
+        addToDataBaseBtn = new QPushButton(centralWidget);
+        addToDataBaseBtn->setObjectName(QStringLiteral("addToDataBaseBtn"));
 
-        gridLayout->addWidget(image_show_label, 0, 1, 7, 1);
+        gridLayout->addWidget(addToDataBaseBtn, 1, 0, 1, 1);
+
+        recognitionBtn = new QPushButton(centralWidget);
+        recognitionBtn->setObjectName(QStringLiteral("recognitionBtn"));
+
+        gridLayout->addWidget(recognitionBtn, 2, 0, 1, 1);
+
+        deleteDataBaseBtn = new QPushButton(centralWidget);
+        deleteDataBaseBtn->setObjectName(QStringLiteral("deleteDataBaseBtn"));
+
+        gridLayout->addWidget(deleteDataBaseBtn, 3, 0, 1, 1);
 
         database_count_label = new QLabel(centralWidget);
         database_count_label->setObjectName(QStringLiteral("database_count_label"));
@@ -89,33 +98,11 @@ public:
 
         gridLayout->addWidget(database_count_label, 4, 0, 1, 1);
 
-        progressBar = new QProgressBar(centralWidget);
-        progressBar->setObjectName(QStringLiteral("progressBar"));
-        progressBar->setLayoutDirection(Qt::LeftToRight);
-        progressBar->setValue(0);
+        image_show_label = new QLabel(centralWidget);
+        image_show_label->setObjectName(QStringLiteral("image_show_label"));
+        image_show_label->setAlignment(Qt::AlignCenter);
 
-        gridLayout->addWidget(progressBar, 7, 1, 1, 1);
-
-        recognitionBtn = new QPushButton(centralWidget);
-        recognitionBtn->setObjectName(QStringLiteral("recognitionBtn"));
-
-        gridLayout->addWidget(recognitionBtn, 2, 0, 1, 1);
-
-        recognition_obj_edit = new QTextEdit(centralWidget);
-        recognition_obj_edit->setObjectName(QStringLiteral("recognition_obj_edit"));
-        recognition_obj_edit->setReadOnly(true);
-
-        gridLayout->addWidget(recognition_obj_edit, 7, 0, 1, 1);
-
-        addToDataBaseBtn = new QPushButton(centralWidget);
-        addToDataBaseBtn->setObjectName(QStringLiteral("addToDataBaseBtn"));
-
-        gridLayout->addWidget(addToDataBaseBtn, 1, 0, 1, 1);
-
-        deleteDataBaseBtn = new QPushButton(centralWidget);
-        deleteDataBaseBtn->setObjectName(QStringLiteral("deleteDataBaseBtn"));
-
-        gridLayout->addWidget(deleteDataBaseBtn, 3, 0, 1, 1);
+        gridLayout->addWidget(image_show_label, 0, 1, 7, 1);
 
         recognition_obj_label = new QLabel(centralWidget);
         recognition_obj_label->setObjectName(QStringLiteral("recognition_obj_label"));
@@ -131,6 +118,27 @@ public:
 
         gridLayout->addWidget(database_number_edit, 5, 0, 1, 1);
 
+        progressBar = new QProgressBar(centralWidget);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setLayoutDirection(Qt::LeftToRight);
+        progressBar->setValue(0);
+
+        gridLayout->addWidget(progressBar, 7, 1, 1, 1);
+
+        recognition_obj_edit = new QTextEdit(centralWidget);
+        recognition_obj_edit->setObjectName(QStringLiteral("recognition_obj_edit"));
+        recognition_obj_edit->setReadOnly(true);
+
+        gridLayout->addWidget(recognition_obj_edit, 7, 0, 1, 1);
+
+        gridLayout->setRowStretch(0, 2);
+        gridLayout->setRowStretch(1, 2);
+        gridLayout->setRowStretch(2, 2);
+        gridLayout->setRowStretch(3, 2);
+        gridLayout->setRowStretch(4, 2);
+        gridLayout->setRowStretch(5, 2);
+        gridLayout->setRowStretch(6, 1);
+        gridLayout->setRowStretch(7, 1);
         gridLayout->setColumnStretch(0, 1);
         gridLayout->setColumnStretch(1, 3);
 
@@ -139,7 +147,7 @@ public:
         GaitUIClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(GaitUIClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 672, 23));
+        menuBar->setGeometry(QRect(0, 0, 758, 23));
         GaitUIClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(GaitUIClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -155,14 +163,14 @@ public:
 
     void retranslateUi(QMainWindow *GaitUIClass)
     {
-        GaitUIClass->setWindowTitle(QApplication::translate("GaitUIClass", "GaitUI", Q_NULLPTR));
-        loadModelBtn->setText(QApplication::translate("GaitUIClass", "Load Model", Q_NULLPTR));
-        image_show_label->setText(QApplication::translate("GaitUIClass", "SequenceShowArea", Q_NULLPTR));
-        database_count_label->setText(QApplication::translate("GaitUIClass", "DataBase Count", Q_NULLPTR));
-        recognitionBtn->setText(QApplication::translate("GaitUIClass", "Recognition", Q_NULLPTR));
-        addToDataBaseBtn->setText(QApplication::translate("GaitUIClass", "Add To DataBase", Q_NULLPTR));
-        deleteDataBaseBtn->setText(QApplication::translate("GaitUIClass", "Delete DataBase", Q_NULLPTR));
-        recognition_obj_label->setText(QApplication::translate("GaitUIClass", "RecognitionOBJ", Q_NULLPTR));
+        GaitUIClass->setWindowTitle(QApplication::translate("GaitUIClass", "GaitUI", nullptr));
+        loadModelBtn->setText(QApplication::translate("GaitUIClass", "Load Model", nullptr));
+        addToDataBaseBtn->setText(QApplication::translate("GaitUIClass", "Add To DataBase", nullptr));
+        recognitionBtn->setText(QApplication::translate("GaitUIClass", "Recognition", nullptr));
+        deleteDataBaseBtn->setText(QApplication::translate("GaitUIClass", "Delete DataBase", nullptr));
+        database_count_label->setText(QApplication::translate("GaitUIClass", "DataBase Count", nullptr));
+        image_show_label->setText(QApplication::translate("GaitUIClass", "SequenceShowArea", nullptr));
+        recognition_obj_label->setText(QApplication::translate("GaitUIClass", "RecognitionOBJ", nullptr));
     } // retranslateUi
 
 };

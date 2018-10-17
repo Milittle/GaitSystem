@@ -257,7 +257,7 @@ void GaitUI::setProgressBar(int n, int sum)
 		ui.progressBar->setValue(0);
 		ui.progressBar->setVisible(false);
 		QMessageBox::information(NULL, "Tips", "Finished", QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
-		setControlStatus(true); //设置空间不可用
+		setControlStatus(true); //设置控件不可用
 	}
 }
 

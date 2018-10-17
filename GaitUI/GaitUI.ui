@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>372</height>
+    <width>758</width>
+    <height>397</height>
    </rect>
   </property>
   <property name="font">
@@ -44,13 +44,24 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1" rowspan="7">
-       <widget class="QLabel" name="image_show_label">
+      <item row="1" column="0">
+       <widget class="QPushButton" name="addToDataBaseBtn">
         <property name="text">
-         <string>SequenceShowArea</string>
+         <string>Add To DataBase</string>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="recognitionBtn">
+        <property name="text">
+         <string>Recognition</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="deleteDataBaseBtn">
+        <property name="text">
+         <string>Delete DataBase</string>
         </property>
        </widget>
       </item>
@@ -67,31 +78,13 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="recognitionBtn">
+      <item row="0" column="1" rowspan="7">
+       <widget class="QLabel" name="image_show_label">
         <property name="text">
-         <string>Recognition</string>
+         <string>SequenceShowArea</string>
         </property>
-       </widget>
-      </item>
-      <item row="7" column="0">
-       <widget class="QTextEdit" name="recognition_obj_edit">
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="addToDataBaseBtn">
-        <property name="text">
-         <string>Add To DataBase</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QPushButton" name="deleteDataBaseBtn">
-        <property name="text">
-         <string>Delete DataBase</string>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -128,6 +121,13 @@
         </property>
        </widget>
       </item>
+      <item row="7" column="0">
+       <widget class="QTextEdit" name="recognition_obj_edit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -137,7 +137,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>672</width>
+     <width>758</width>
      <height>23</height>
     </rect>
    </property>

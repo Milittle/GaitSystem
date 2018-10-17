@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'MyDialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'MyDialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.2. It"
+#error "This file was generated using the moc from 5.10.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -91,17 +91,16 @@ void MyDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
-        void **func = reinterpret_cast<void **>(_a[1]);
         {
             typedef void (MyDialog::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MyDialog::mySignal)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&MyDialog::mySignal)) {
                 *result = 0;
                 return;
             }
         }
         {
             typedef void (MyDialog::*_t)(int , QString );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MyDialog::withParam)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&MyDialog::withParam)) {
                 *result = 1;
                 return;
             }
@@ -109,7 +108,7 @@ void MyDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     }
 }
 
-const QMetaObject MyDialog::staticMetaObject = {
+QT_INIT_METAOBJECT const QMetaObject MyDialog::staticMetaObject = {
     { &QDialog::staticMetaObject, qt_meta_stringdata_MyDialog.data,
       qt_meta_data_MyDialog,  qt_static_metacall, nullptr, nullptr}
 };
