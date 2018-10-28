@@ -53,7 +53,7 @@ git clone git@github.com:Milittle/GaitSystem.git
 
 **Add To DataBase---:** Using this button add the gait feature to the Database(Feature database).
 
-**Recognition---:**Using this button recognition the people already loaded.
+**Recognition---:** Using this button recognition the people already loaded.
 
 **Delete DataBase---:** The button feature is not implement.(i will add it).
 
