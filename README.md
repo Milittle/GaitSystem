@@ -8,12 +8,15 @@ I use this method implment the Project based C++, Qt and some 3rdparty to recogn
 
 ## Table of Content
 
-* [Prerequisites](#prerequisites)
-* [Getting the code](#getting-the-code)
-* [Getting the Datasets](#getting-the-datasets)
-* [Running this Project with you](#running-this-project-with-you)
-* [Gif Demo](#gif-demo)
-* [Concat Getting Help](#concat-getting-help)
+- [Project GaitSystem](#project-gaitsystem)
+  - [Table of Content](#table-of-content)
+  - [Prerequisites](#prerequisites)
+  - [Getting the code](#getting-the-code)
+  - [Getting the Datasets](#getting-the-datasets)
+  - [Running this Project with you](#running-this-project-with-you)
+  - [Gif Demo](#gif-demo)
+- [Concat Getting Help](#concat-getting-help)
+- [Ref:](#ref)
 
 ## Prerequisites
 
@@ -53,7 +56,7 @@ git clone git@github.com:Milittle/GaitSystem.git
 
 **Add To DataBase---:** Using this button add the gait feature to the Database(Feature database).
 
-**Recognition---:**Using this button recognition the people already loaded.
+**Recognition---:** Using this button recognition the people already loaded.
 
 **Delete DataBase---:** The button feature is not implement.(i will add it).
 
