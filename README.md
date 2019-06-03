@@ -74,3 +74,16 @@ git clone git@github.com:Milittle/GaitSystem.git
 最后：这是我写的比较水的一个步态识别的小Demo，以后再有机会做一些其他方面的工作。
 
 毕竟这是第一个步态识别小Demo，留作纪念而已。（好多东西都需要优化！！！）
+
+# Ref:
+
+About **Armadillo** **Library**:
+
+Conrad Sanderson and Ryan Curtin. 
+*Armadillo: a template-based C++ library for linear algebra*. 
+[Journal of Open Source Software, Vol. 1, pp. 26, 2016. ](http://arma.sourceforge.net/armadillo_joss_2016.pdf)
+
+Conrad Sanderson and Ryan Curtin. 
+*A User-Friendly Hybrid Sparse Matrix Class in C++*. 
+[Lecture Notes in Computer Science (LNCS), Vol. 10931, pp. 422-430, 2018. ](http://arma.sourceforge.net/arma_spmat_icms_2018.pdf)
+

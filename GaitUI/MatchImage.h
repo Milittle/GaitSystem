@@ -117,6 +117,8 @@ public:
 	static int getMean(std::set<int> tempX)
 	{
 		long long sum = 0;
+		if (tempX.size() <= 0)
+			return sum;
 		for (auto it = tempX.begin(); it != tempX.end(); ++it)
 		{
 			sum += *it;
